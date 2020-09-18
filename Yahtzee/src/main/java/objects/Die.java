@@ -11,11 +11,14 @@ public class Die {
 
     public Die (int faces){
         this.faces=faces;
-        this.faceUp=rand.nextInt(1)+(faces-1);
+        this.faceUp=rand.nextInt(faces)+1;
     }
     public Die (int faces, int faceUp){
         this.faces=faces;
         this.faceUp=faceUp;
+    }
+    public int roll(){
+        return rand.nextInt(faces)+1;
     }
 }
 
