@@ -18,7 +18,11 @@ public class Main {
             Die die = new Die(6);
             dice.add(die);
         }
+        for (Die cube : dice)
+            System.out.println(cube.getRoll());
+
+    }
     }
 
-}
+
 
