@@ -17,8 +17,13 @@ public class Die {
         this.faces=faces;
         this.faceUp=faceUp;
     }
-    public int roll(){
-        return rand.nextInt(faces)+1;
+    public void roll(){
+        this.faceUp =rand.nextInt(faces)+1;
     }
+
+    public int getRoll(){
+        return faceUp;
 }
 
+
+}

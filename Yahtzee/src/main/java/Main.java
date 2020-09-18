@@ -7,10 +7,22 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Roll Die 10x");
-        Die die = new Die(6);
-        for (int idx=0; idx<10; idx++){
-            System.out.println(die.roll());
+
+
+        //  Rolling 1 Die 10 times.
+        //  for (int idx = 0; idx < 10; idx++)
+       //     System.out.println(die.roll());
+
+        // Making a List of Dice that have been rolled.
+        List<Die> dice = new ArrayList<Die>();
+
+        for (int idx = 0; idx < 5; idx++) {
+            Die die = new Die(6);
+            dice.add(die);
         }
+        for (Die cube : dice)
+            System.out.println(cube.getRoll());
+
     }
 }
 
